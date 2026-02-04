@@ -1,0 +1,25 @@
+rules:
+  - name: MISSING_ACTUAL_DELIVERY
+    condition: actual_delivery_ts_is_null
+    penalty: 25
+    severity: HIGH
+
+  - name: DELIVERY_BEFORE_PICKUP
+    condition: delivery_before_pickup
+    penalty: 30
+    severity: HIGH
+
+  - name: INVALID_TRANSIT_TIME
+    condition: invalid_transit_time
+    penalty: 15
+    severity: MEDIUM
+
+  - name: LATE_UPDATE
+    condition: late_update
+    penalty: 10
+    severity: LOW
+
+  - name: MISSING_CARRIER
+    condition: carrier_is_null
+    penalty: 10
+    severity: MEDIUM
