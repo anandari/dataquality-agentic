@@ -21,3 +21,6 @@ Deterministic scoring using data completeness, congestion, carrier history, ETA 
 🤖 Agentic triage & simulated orchestration
 A rule-driven agent that observes, scores, simulates fixes, and recommends actions
 (Jira / Freshdesk / Email are simulated — no real write-back).
+
+To run use:
+streamlit run app.py
